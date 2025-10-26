@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_bg" />
+
+    <!-- Semi-transparent overlay -->
+    <View
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Centered Container -->
+    <LinearLayout
+        android:id="@+id/registerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="40dp">
+
+        <!-- Logo -->
+
+        <!-- Username -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="114dp"
+            android:layout_height="113dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/voyage_logo" />
+
+        <TextView
+            android:id="@+id/lblUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Username"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputUsername"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input_border"
+            android:hint="Enter your username"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#78787C" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Email"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input_border"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#78787C" />
+
+        <!-- Password -->
+        <TextView
+            android:id="@+id/lblPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Password"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input_border"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#78787C" />
+
+        <!-- Confirm Password -->
+        <TextView
+            android:id="@+id/lblConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Confirm Password"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/inputConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_border"
+            android:hint="Re-enter your password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#78787C" />
+
+        <!-- Radio Buttons -->
+        <RadioGroup
+            android:id="@+id/radioUserType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="25dp">
+
+            <RadioButton
+                android:id="@+id/radioTraveller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:checked="true"
+                android:text="Traveller"
+                android:textColor="#333" />
+
+            <RadioButton
+                android:id="@+id/radioBusinessOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/holo_blue_light"
+                android:text="Business Owner"
+                android:textColor="#333" />
+        </RadioGroup>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#F3A62C"
+            android:text="Submit"
+            android:textColor="#174E77"
+            android:textSize="16sp" />
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Reset"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Login Link -->
+        <TextView
+            android:id="@+id/txtLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Already have an account?"
+            android:textColor="#78787C"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_bg" />
+
+    <!-- Semi-transparent overlay for better readability -->
+    <View
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Center container for all login content -->
+    <LinearLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="40dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/voyage_logo" />
+
+        <!-- Email Label -->
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Email"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_border"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#78787C" />
+
+        <!-- Password Label -->
+        <TextView
+            android:id="@+id/lblPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Password"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/input_border"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#78787C" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Register Link -->
+        <TextView
+            android:id="@+id/txtRegisterLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="Don't have an account yet?"
+            android:textColor="#78787C"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

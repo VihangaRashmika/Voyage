@@ -9,7 +9,6 @@ import com.example.voyage_v2.R
 
 class HomeFragment : Fragment() {
 
-//    this is the fragments handling code
     companion object {
         fun newInstance() = HomeFragment()
     }

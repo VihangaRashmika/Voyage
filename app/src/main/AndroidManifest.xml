@@ -12,23 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Voyage_V2">
         <activity
+            android:name=".PackageCreateActivity"
+            android:exported="false" />
+        <!-- Home Screen -->
+        <activity
             android:name=".HomeActivity"
             android:exported="false"
-            android:theme="@style/Theme.Voyage_V2"/>
+            android:theme="@style/Theme.Voyage_V2.NoStatusBar" /> <!-- Register Screen (Full screen) -->
         <activity
             android:name=".RegisterActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Voyage_V2.NoStatusBar" /> <!-- Login Screen (Full screen) -->
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Voyage_V2.NoStatusBar" /> <!-- Prompt Screen (Full screen) -->
         <activity
             android:name=".PromptScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Voyage_V2.NoStatusBar" /> <!-- Main Entry Point -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Voyage_V2">
+            android:theme="@style/Theme.Voyage_V2.NoStatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New Package"
+            android:textSize="24sp"
+            android:textColor="#174E77"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Package Name"
+            android:background="@drawable/input_border"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Price (LKR)"
+            android:inputType="numberDecimal"
+            android:background="@drawable/input_border"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Description"
+            android:gravity="top"
+            android:background="@drawable/input_border"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnCreatePackage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#F3A62C"
+            android:text="Create Package"
+            android:textColor="#174E77"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

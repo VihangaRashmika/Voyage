@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "637733372399",
+    "firebase_url": "https://voyagev2-a9342-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "voyagev2-a9342",
+    "storage_bucket": "voyagev2-a9342.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637733372399:android:2e024766f62b3cfacf761a",
+        "android_client_info": {
+          "package_name": "com.example.voyage_v2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT3O4ZmnjXh4Gq7DprgUVCWI-5te9Ouag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

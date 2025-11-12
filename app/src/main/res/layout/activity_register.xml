@@ -12,13 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/sample_bg" />
+        android:src="@drawable/sample_bg"
+        android:clickable="false"
+        android:focusable="false"
+        />
 
     <!-- Semi-transparent overlay -->
     <View
         android:id="@+id/overlayView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"/>
 
     <!-- Centered Container -->
     <LinearLayout
@@ -59,7 +64,7 @@
             android:hint="Enter your username"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#333"
             android:textColorHint="#78787C" />
 
         <!-- Email -->
@@ -82,7 +87,7 @@
             android:inputType="textEmailAddress"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#333"
             android:textColorHint="#78787C" />
 
         <!-- Password -->
@@ -105,7 +110,7 @@
             android:inputType="textPassword"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#333"
             android:textColorHint="#78787C" />
 
         <!-- Confirm Password -->
@@ -128,7 +133,7 @@
             android:inputType="textPassword"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#333"
             android:textColorHint="#78787C" />
 
         <!-- Radio Buttons -->

@@ -60,7 +60,7 @@
             android:inputType="textEmailAddress"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#333"
             android:textColorHint="#78787C" />
 
         <!-- Password Label -->
@@ -84,7 +84,7 @@
             android:inputType="textPassword"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#333"
             android:textColorHint="#78787C" />
 
         <!-- Login Button -->

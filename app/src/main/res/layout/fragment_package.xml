@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    tools:context=".ui.home.PackageFragment">
 
+    <!-- Optional Header -->
     <TextView
         android:id="@+id/txtPackage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Package Fragment"
-        android:textSize="24sp"
+        android:text="Available Packages"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:textColor="#000000"
-        android:layout_centerInParent="true" />
+        android:layout_margin="16dp" />
+
+    <!-- RecyclerView to show the package list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtPackage"
+        android:padding="1dp"
+        android:clipToPadding="false" />
+
 </RelativeLayout>

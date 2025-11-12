@@ -1,15 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:padding="24dp"
+    tools:context="com.example.voyage_v2.ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/txtHome"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Fragment"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        android:layout_centerInParent="true" />
-</RelativeLayout>
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/txtHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Hotel Owner"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Row of Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3"
+            android:layout_marginBottom="40dp">
+
+            <!-- Create New Package -->
+            <LinearLayout
+                android:id="@+id/btnCreatePackage"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/box_button_bg">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add_box" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create\nPackage"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- My Packages -->
+            <LinearLayout
+                android:id="@+id/btnMyPackages"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/box_button_bg">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_folder"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My\nPackages"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Notifications -->
+            <LinearLayout
+                android:id="@+id/btnNotifications"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/box_button_bg">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_notifications"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Placeholder Section -->
+        <ImageView
+            android:id="@+id/imgPlaceholder"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:src="@drawable/ic_coming_soon"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+             />
+
+        <TextView
+            android:id="@+id/txtComingSoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New content coming soon!"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#174E77"
+            android:elevation="4dp"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_revert"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Edit Package"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Images Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Package Images"
+                android:textSize="18sp"
+                android:textColor="#174E77"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Image 1 (Cover) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📷 Cover Image"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/imgPreview1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnChangeImage1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Change"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2196F3"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnRemoveImage1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Remove"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#F44336"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!-- Image 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📷 Gallery Image 2 (Optional)"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/imgPreview2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnChangeImage2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Add/Change"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#4CAF50"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnRemoveImage2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Remove"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#F44336"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!-- Image 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📷 Gallery Image 3 (Optional)"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/imgPreview3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/btnChangeImage3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Add/Change"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#FF9800"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnRemoveImage3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Remove"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#F44336"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Package Details -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Package Details"
+                android:textSize="18sp"
+                android:textColor="#174E77"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/inputName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Package Name"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/inputPrice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Price (LKR)"
+                android:inputType="numberDecimal"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/inputLocation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Location"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/inputPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Contact Phone"
+                android:inputType="phone"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/inputFacilities"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Facilities"
+                android:gravity="top"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/inputDescription"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Description"
+                android:gravity="top"
+                android:background="@drawable/input_border"
+                android:padding="10dp"
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:id="@+id/btnUpdatePackage"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="#4CAF50"
+                android:text="Update Package"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

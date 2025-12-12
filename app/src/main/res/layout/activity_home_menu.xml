@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
     >
 
     <!-- Fragment container takes all space above bottom nav -->

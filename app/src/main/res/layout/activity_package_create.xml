@@ -40,6 +40,35 @@
             android:layout_marginBottom="16dp" />
 
         <EditText
+            android:id="@+id/inputLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Location"
+            android:background="@drawable/input_border"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:background="@drawable/input_border"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputFacilities"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Facilities"
+            android:gravity="top"
+            android:background="@drawable/input_border"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
             android:id="@+id/inputDescription"
             android:layout_width="match_parent"
             android:layout_height="120dp"
@@ -49,13 +78,135 @@
             android:padding="10dp"
             android:layout_marginBottom="16dp" />
 
+        <!-- Image Selection Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Package Images (1-3)"
+            android:textSize="16sp"
+            android:textColor="#174E77"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnSelectImages"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Select Images"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Image Preview Grid -->
+        <LinearLayout
+            android:id="@+id/imagePreviewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓ Selected Images:"
+                android:textSize="14sp"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Image Grid -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!-- Image 1 Preview -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageView
+                        android:id="@+id/imgPreview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="#EEEEEE"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtCoverBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⭐ Cover"
+                        android:textSize="10sp"
+                        android:textColor="#FFFFFF"
+                        android:background="#FF9800"
+                        android:padding="4dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <!-- Image 2 Preview -->
+                <ImageView
+                    android:id="@+id/imgPreview2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:scaleType="centerCrop"
+                    android:background="#EEEEEE"
+                    android:visibility="gone" />
+
+                <!-- Image 3 Preview -->
+                <ImageView
+                    android:id="@+id/imgPreview3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:scaleType="centerCrop"
+                    android:background="#EEEEEE"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!-- Selected Count -->
+            <TextView
+                android:id="@+id/txtImageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 images selected"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tip: First image will be the cover photo. You can select Maximum 3 images!"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="24dp" />
+
         <Button
             android:id="@+id/btnCreatePackage"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="56dp"
             android:backgroundTint="#F3A62C"
             android:text="Create Package"
             android:textColor="#174E77"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="16sp" />
     </LinearLayout>
 </ScrollView>

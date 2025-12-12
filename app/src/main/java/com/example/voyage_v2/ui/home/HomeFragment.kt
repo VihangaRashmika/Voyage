@@ -2,10 +2,14 @@ package com.example.voyage_v2.ui.home
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.voyage_v2.HomeActivity
+import com.example.voyage_v2.MyPackagesActivity
+import com.example.voyage_v2.NotificationsActivity
 import com.example.voyage_v2.PackageCreateActivity
 import com.example.voyage_v2.databinding.FragmentHomeBinding
 
@@ -32,6 +36,22 @@ class HomeFragment : Fragment() {
 
         binding.btnCreatePackage.setOnClickListener {
             val intent = Intent(requireContext(), PackageCreateActivity::class.java)
+            val userName = (activity as? HomeActivity)?.getUserName()
+            intent.putExtra("userName", userName)
+            startActivity(intent)
+        }
+
+        binding.btnMyPackages.setOnClickListener {
+            val intent = Intent(requireContext(), MyPackagesActivity::class.java)
+            val userName = (activity as? HomeActivity)?.getUserName()
+            intent.putExtra("userName", userName)
+            startActivity(intent)
+        }
+
+        binding.btnNotifications.setOnClickListener {
+            val intent = Intent(requireContext(), NotificationsActivity::class.java)
+            val userName = (activity as? HomeActivity)?.getUserName()
+            intent.putExtra("ownerName", userName)
             startActivity(intent)
         }
     }

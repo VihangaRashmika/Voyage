@@ -5,5 +5,8 @@ data class Package_Firebase(
     val price: Double = 0.0,
     val description: String = "",
     val image: String = "",
-    val author: String = ""
+    val author: String = "",
+    val phone: String = "",
+    val facilities: String = "",
+    val location: String = ""
 )

@@ -5,5 +5,8 @@ data class TravelPackage(
     val price: Double,
     val description: String,
     val image: String,
-    val author: String
+    val author: String,
+    val phone: String = "",
+    val facilities: String = "",
+    val location: String = ""
 )

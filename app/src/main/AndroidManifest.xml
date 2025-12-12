@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -11,26 +14,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Voyage_V2">
+
+        <activity
+            android:name=".BrowsePackagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".TopRatedActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".BudgetPackagesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditPackageActivity"
+            android:exported="false" />
+
         <activity
             android:name=".PackageCreateActivity"
             android:exported="false" />
-        <!-- Home Screen -->
+
+        <activity
+            android:name=".MyPackagesActivity"
+            android:exported="false" />
+
         <activity
             android:name=".HomeActivity"
             android:exported="false"
-            android:theme="@style/Theme.Voyage_V2.NoStatusBar" /> <!-- Register Screen (Full screen) -->
+            android:theme="@style/Theme.Voyage_V2.NoStatusBar" />
+
         <activity
             android:name=".RegisterActivity"
             android:exported="false"
-            android:theme="@style/Theme.Voyage_V2.NoStatusBar" /> <!-- Login Screen (Full screen) -->
+            android:theme="@style/Theme.Voyage_V2.NoStatusBar" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:theme="@style/Theme.Voyage_V2.NoStatusBar" /> <!-- Prompt Screen (Full screen) -->
+            android:theme="@style/Theme.Voyage_V2.NoStatusBar" />
+
         <activity
             android:name=".PromptScreen"
             android:exported="false"
-            android:theme="@style/Theme.Voyage_V2.NoStatusBar" /> <!-- Main Entry Point -->
+            android:theme="@style/Theme.Voyage_V2.NoStatusBar" />
+        <activity
+            android:name=".PackageDetailsActivity"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -38,10 +72,10 @@
             android:theme="@style/Theme.Voyage_V2.NoStatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
